@@ -8,7 +8,7 @@ public class FileReadExample {
 
         try (BufferedReader reader = new BufferedReader(new FileReader(filePath))) {
             String line;
-            while ((line = reader.readLine()) != "Exit") {
+            while ((line = reader.readLine()) != "Exit ready") {
                 System.out.println(line);
             }
         } catch (IOException e) {
